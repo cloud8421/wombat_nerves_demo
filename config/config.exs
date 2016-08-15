@@ -33,10 +33,10 @@ config :phoenix, :generators,
 
 config :restfully, Restfully.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "claudioortolina",
+  username: "postgres",
   password: "",
   database: "restfully_dev",
-  hostname: "10.151.0.11",
+  hostname: "10.151.1.54",
   pool_size: 10
 
 # Import target specific config. This must remain at the bottom
