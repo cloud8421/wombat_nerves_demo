@@ -1,5 +1,6 @@
 defmodule WombatDemo do
   use Application
+  alias Nerves.Networking
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html
   # for more information on OTP Applications
@@ -8,6 +9,7 @@ defmodule WombatDemo do
 
     # Define workers and child supervisors to be supervised
     children = [
+      worker(Networking, [:eth0], function: :setup)
       # worker(WombatDemo.Worker, [arg1, arg2, arg3]),
     ]
 
