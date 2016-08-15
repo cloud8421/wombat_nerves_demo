@@ -21,11 +21,13 @@ defmodule WombatDemo.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {WombatDemo, []},
-     applications: [:logger]]
+     applications: [:logger, :nerves_networking, :restfully]]
   end
 
   def deps do
-    [{:nerves, "~> 0.3.0"}]
+    [{:nerves, "~> 0.3.0"},
+     {:nerves_networking, github: "nerves-project/nerves_networking"},
+     {:restfully, github: "marcsugiyama/restfully"}]
   end
 
   def system(target) do
