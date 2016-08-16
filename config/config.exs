@@ -33,8 +33,8 @@ config :phoenix, :generators,
 
 config :restfully, Restfully.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "",
+  username: "wombat_demo",
+  password: "wombat_demo",
   database: "restfully_dev",
   hostname: "192.168.1.200",
   pool_size: 10
