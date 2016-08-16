@@ -1,5 +1,5 @@
 ## Start the Elixir shell
--name wombat_demo@10.151.0.27
+-name wombat_demo@192.168.1.101
 -setcookie wombat_demo
 -noshell
 -user Elixir.IEx.CLI

@@ -36,7 +36,7 @@ config :restfully, Restfully.Repo,
   username: "postgres",
   password: "",
   database: "restfully_dev",
-  hostname: "10.151.1.54",
+  hostname: "192.168.1.200",
   pool_size: 10
 
 # Import target specific config. This must remain at the bottom
